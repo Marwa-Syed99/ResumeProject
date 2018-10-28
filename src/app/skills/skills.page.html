@@ -1,0 +1,59 @@
+<!--Added this code to every page on the list so the menu tab shows Marwa Syed 1401350-->
+<ion-header>
+    <ion-title>
+        Skills
+        </ion-title>
+    <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button> <!--This adds the menu on the left side so user can navigate elsewhere Marwa Syed 1401350-->
+        </ion-buttons>
+      
+        <!--Toolbar for the segments Marwa Syed 1401350-->
+    <ion-toolbar>
+        <ion-segment [(ngModel)]="skills"> 
+          <ion-segment-button value="it"> <!--First Segment Marwa Syed 1401350-->
+            I.T
+          </ion-segment-button>
+          <ion-segment-button value="other"> <!--Second Segment Marwa Syed 1401350-->
+            Other
+          </ion-segment-button>
+        </ion-segment>
+      </ion-toolbar>
+   </ion-header>
+  
+<!--The content of the first segment Marwa Syed 1401350-->
+  <ion-content>
+    <div [ngSwitch]="skills">
+      <ion-list *ngSwitchCase="'it'">
+        <ion-item>
+          <h2>HTML,CSS,JavaScript</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Ionic</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Cordova</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Angular</h2>
+        </ion-item>
+      </ion-list>
+
+      <!--Content of the second segment Marwa Syed 1401350-->
+  
+      <ion-list *ngSwitchCase="'other'">
+        <ion-item>
+          <h2>Teamwork</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Self Management</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Diligent</h2>
+        </ion-item>
+        <ion-item>
+          <h2>Planning and Research</h2>
+        </ion-item>
+      </ion-list>
+  
+    </div>
+  </ion-content>

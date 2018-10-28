@@ -1,0 +1,7 @@
+{
+  "name": "ResumeProject",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}
